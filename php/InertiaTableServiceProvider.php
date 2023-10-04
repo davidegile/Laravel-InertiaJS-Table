@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelQueryBuilderInertiaJs;
+namespace DavideGile\LaravelQueryBuilderInertiaJs;
 
 use Illuminate\Support\ServiceProvider;
 use Inertia\Response as InertiaResponse;
