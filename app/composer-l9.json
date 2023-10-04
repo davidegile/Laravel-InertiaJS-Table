@@ -16,7 +16,7 @@
         "laravel/framework": "^9.37",
         "laravel/sanctum": "^2.8",
         "laravel/tinker": "^2.7",
-        "davidegile/Laravel-InertiaJS-Table": "@dev",
+        "davidegile/laravel-inertiajs-table": "@dev",
         "spatie/laravel-query-builder": "^5.0",
         "tightenco/ziggy": "^1.0"
     },

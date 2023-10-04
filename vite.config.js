@@ -10,7 +10,7 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, "js/main.js"),
             name: "Inertia.js Tables for Laravel Query Builder",
-            fileName: (format) => `Laravel-InertiaJS-Table.${format}.js`
+            fileName: (format) => `laravel-inertiajs-table.${format}.js`
         },
         rollupOptions: {
             external: [

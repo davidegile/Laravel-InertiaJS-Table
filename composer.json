@@ -1,7 +1,7 @@
 {
-    "name": "davidegile/Laravel-InertiaJS-Table",
+    "name": "davidegile/laravel-inertiajs-table",
     "description": "Inertia.js Front-end Components for Spatie's Laravel Query Builder",
-    "homepage": "https://github.com/davidegile/Laravel-InertiaJS-Table",
+    "homepage": "https://github.com/davidegile/laravel-inertiajs-table",
     "type": "library",
     "license": "MIT",
     "authors": [

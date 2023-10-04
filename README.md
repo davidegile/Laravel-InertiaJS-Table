@@ -1,12 +1,12 @@
 # Inertia.js Tables for Laravel Query Builder
 
-[![Latest Version on NPM](https://img.shields.io/npm/v/@davidegile/Laravel-InertiaJS-Table.svg?style=flat-square)](https://npmjs.com/package/@davidegile/Laravel-InertiaJS-Table)
-[![npm](https://img.shields.io/npm/dt/@davidegile/Laravel-InertiaJS-Table.svg?style=flat-square)](https://www.npmjs.com/package/@davidegile/Laravel-InertiaJS-Table)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/davidegile/Laravel-InertiaJS-Table.svg?style=flat-square)](https://packagist.org/packages/davidegile/Laravel-InertiaJS-Table)
+[![Latest Version on NPM](https://img.shields.io/npm/v/@davidegile/laravel-inertiajs-table.svg?style=flat-square)](https://npmjs.com/package/@davidegile/laravel-inertiajs-table)
+[![npm](https://img.shields.io/npm/dt/@davidegile/laravel-inertiajs-table.svg?style=flat-square)](https://www.npmjs.com/package/@davidegile/laravel-inertiajs-table)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/davidegile/laravel-inertiajs-table.svg?style=flat-square)](https://packagist.org/packages/davidegile/laravel-inertiajs-table)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![run-tests](https://github.com/davidegile/Laravel-InertiaJS-Table/actions/workflows/php.yml/badge.svg?branch=main)](https://github.com/davidegile/Laravel-InertiaJS-Table/actions/workflows/php.yml)
+[![run-tests](https://github.com/davidegile/laravel-inertiajs-table/actions/workflows/php.yml/badge.svg?branch=main)](https://github.com/davidegile/laravel-inertiajs-table/actions/workflows/php.yml)
 
-## [Fork reason](https://github.com/davidegile/Laravel-InertiaJS-Table/issues/122)
+## [Fork reason](https://github.com/davidegile/laravel-inertiajs-table/issues/122)
 
 This package provides a *DataTables-like* experience for [Inertia.js](https://inertiajs.com/) with support for searching, filtering, sorting, toggling columns, and pagination. It generates URLs that can be consumed by Spatie's excellent [Laravel Query Builder](https://github.com/spatie/laravel-query-builder) package, with no additional logic needed. The components are styled with [Tailwind CSS 3.0](https://tailwindcss.com/), but it's fully customizable with slots. The data refresh logic is based on Inertia's [Ping CRM demo](https://github.com/inertiajs/pingcrm).
 
@@ -41,7 +41,7 @@ It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://
 * [Tailwind CSS v3](https://tailwindcss.com/) + [Forms plugin](https://github.com/tailwindlabs/tailwindcss-forms)
 * PHP 8.0+
 
-**Note**: There is currently an [issue](https://github.com/davidegile/Laravel-InertiaJS-Table/issues/69) with using this package with Vite!
+**Note**: There is currently an [issue](https://github.com/davidegile/laravel-inertiajs-table/issues/69) with using this package with Vite!
 
 ## Installation
 
@@ -52,7 +52,7 @@ You need to install both the server-side package and the client-side package. No
 You can install the package via composer:
 
 ```bash
-composer require davidegile/Laravel-InertiaJS-Table
+composer require davidegile/laravel-inertiajs-table
 ```
 
 The package will automatically register the Service Provider which provides a `table` method you can use on an Interia Response.
@@ -207,9 +207,9 @@ class UserIndexController
 You can install the package via either `npm` or `yarn`:
 
 ```bash
-npm install @davidegile/Laravel-InertiaJS-Table --save
+npm install @davidegile/laravel-inertiajs-table --save
 
-yarn add @davidegile/Laravel-InertiaJS-Table
+yarn add @davidegile/laravel-inertiajs-table
 ```
 
 Add the repository path to the `content` array of your [Tailwind configuration file](https://tailwindcss.com/docs/content-configuration). This ensures that the styling also works on production builds.
@@ -217,7 +217,7 @@ Add the repository path to the `content` array of your [Tailwind configuration f
 ```js
 module.exports = {
   content: [
-    './node_modules/@davidegile/Laravel-InertiaJS-Table/**/*.{js,vue}',
+    './node_modules/@davidegile/laravel-inertiajs-table/**/*.{js,vue}',
   ]
 }
 ```
@@ -228,7 +228,7 @@ To use the `Table` component and all its related features, you must import the `
 
 ```vue
 <script setup>
-import { Table } from "@davidegile/Laravel-InertiaJS-Table";
+import { Table } from "@davidegile/laravel-inertiajs-table";
 
 defineProps(["users"])
 </script>
@@ -358,7 +358,7 @@ Lastly, pass the correct `name` property to each table in the Vue template. Opti
 
 ```vue
 <script setup>
-import { Table } from "@davidegile/Laravel-InertiaJS-Table";
+import { Table } from "@davidegile/laravel-inertiajs-table";
 
 defineProps(["companies", "users"])
 </script>
@@ -383,7 +383,7 @@ defineProps(["companies", "users"])
 You can override the default pagination translations with the `setTranslations` method. You can do this in your main JavaScript file:
 
 ```js
-import { setTranslations } from "@davidegile/Laravel-InertiaJS-Table";
+import { setTranslations } from "@davidegile/laravel-inertiajs-table";
 
 setTranslations({
   next: "Next",
@@ -461,7 +461,7 @@ php artisan dusk
 
 * The `InteractsWithQueryBuilder` mixin has been removed and is no longer needed.
 * The `Table` component no longer needs the `filters`, `search`, `columns`, and `on-update` properties.
-* When using a custom `thead` or `tbody` slot, you need to provide [the styling](https://github.com/davidegile/Laravel-InertiaJS-Table/blob/c8e21649ad372d309eeb62a8f771aa4c7cd0089e/js/Tailwind2/Table.vue#L1) manually.
+* When using a custom `thead` or `tbody` slot, you need to provide [the styling](https://github.com/davidegile/laravel-inertiajs-table/blob/c8e21649ad372d309eeb62a8f771aa4c7cd0089e/js/Tailwind2/Table.vue#L1) manually.
 * When using a custom `thead`, the `showColumn` method has been renamed to `show`.
 * The `setTranslations` method is no longer part of the `Pagination` component, but should be imported.
 * The templates and logic of the components are not separated anymore. Use slots to inject your own implementations.
