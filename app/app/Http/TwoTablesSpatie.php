@@ -4,8 +4,8 @@ namespace App\Http;
 
 use App\Models\Company;
 use App\Models\User;
+use DavideGile\LaravelQueryBuilderInertiaJs\InertiaTable;
 use Inertia\Inertia;
-use ProtoneMedia\LaravelQueryBuilderInertiaJs\InertiaTable;
 use Spatie\QueryBuilder\QueryBuilder;
 
 class TwoTablesSpatie

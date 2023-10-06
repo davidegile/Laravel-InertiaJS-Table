@@ -1,7 +1,7 @@
 {
-    "name": "protonemedia/inertiajs-tables-laravel-query-builder",
+    "name": "davidegile/laravel-inertiajs-table",
     "description": "Inertia.js Front-end Components for Spatie's Laravel Query Builder",
-    "homepage": "https://github.com/protonemedia/inertiajs-tables-laravel-query-builder",
+    "homepage": "https://github.com/davidegile/laravel-inertiajs-table",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ProtoneMedia\\LaravelQueryBuilderInertiaJs\\": "php"
+            "DavideGile\\LaravelQueryBuilderInertiaJs\\": "php"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ProtoneMedia\\LaravelQueryBuilderInertiaJs\\Tests\\": "tests"
+            "DavideGile\\LaravelQueryBuilderInertiaJs\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ProtoneMedia\\LaravelQueryBuilderInertiaJs\\InertiaTableServiceProvider"
+                "DavideGile\\LaravelQueryBuilderInertiaJs\\InertiaTableServiceProvider"
             ]
         }
     }

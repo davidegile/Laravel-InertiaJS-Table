@@ -4,9 +4,9 @@ namespace App\Http;
 
 use App\Http\Resources\UserResource;
 use App\Models\User;
+use DavideGile\LaravelQueryBuilderInertiaJs\InertiaTable;
 use Illuminate\Support\Collection;
 use Inertia\Inertia;
-use ProtoneMedia\LaravelQueryBuilderInertiaJs\InertiaTable;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 

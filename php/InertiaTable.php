@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelQueryBuilderInertiaJs;
+namespace DavideGile\LaravelQueryBuilderInertiaJs;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
